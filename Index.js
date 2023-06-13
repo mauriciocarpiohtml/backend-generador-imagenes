@@ -16,6 +16,11 @@ const configuration = new Configuration({
   })
   const openai = new OpenAIApi(configuration)
 
+
+  app.get('/', async(req, res) =>{
+    res.json({msg :"Hello world"})
+  })
+
 app.post('/', async(req, res) => {
     try {
         const prompt = req.body.prompt
