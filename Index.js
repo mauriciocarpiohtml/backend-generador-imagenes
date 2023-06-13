@@ -17,7 +17,7 @@ const configuration = new Configuration({
   const openai = new OpenAIApi(configuration)
 
 
-  app.get('/', async(req, res) =>{
+  app.get('/', (req, res) =>{
     res.json({msg :"Hello world"})
   })
 
