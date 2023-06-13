@@ -17,10 +17,6 @@ const configuration = new Configuration({
   const openai = new OpenAIApi(configuration)
 
 
-  app.get('/', (req, res) =>{
-    res.send("Pagina de inicio")
-  })
-
 app.post('/', async(req, res) => {
     try {
         const prompt = req.body.prompt
