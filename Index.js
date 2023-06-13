@@ -18,7 +18,7 @@ const configuration = new Configuration({
 
 
   app.get('/', (req, res) =>{
-    res.send({msg :"Hello world"})
+    res.send("Pagina de inicio")
   })
 
 app.post('/', async(req, res) => {
